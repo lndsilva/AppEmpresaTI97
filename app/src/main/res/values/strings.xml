@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">AppEmpresaTI97</string>
+    <string name="insira_seu_e_mail">Insira seu E-mail</string>
+    <string name="insira_sua_senha">Insira sua senha</string>
+    <string name="login">Login</string>
+    <string name="recuperar_usu_rio_senha">Recuperar usuário/senha?</string>
+    <string name="ou">__________ ou _________</string>
+    <string name="cadastrar"><u>Cadastrar</u></string>
+    <string name="insira_o_nome_do_usu_rio">Insira o nome do usuário</string>
+    <string name="insira_o_email_do_usu_rio">Insira o email do usuário</string>
+    <string name="insira_a_senha_do_usu_rio">Insira a senha do usuário</string>
+    <string name="repetir_a_senha_do_usu_rio">Repetir a senha do usuário</string>
+    <string name="cadastrar_usuario">Cadastrar</string>
+    <string name="termo_de_uso"><u>Termo de uso</u></string>
 </resources>
