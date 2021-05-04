@@ -12,4 +12,5 @@
     <string name="repetir_a_senha_do_usu_rio">Repetir a senha do usuário</string>
     <string name="cadastrar_usuario">Cadastrar</string>
     <string name="termo_de_uso"><u>Termo de uso</u></string>
+    <string name="sair">Sair</string>
 </resources>

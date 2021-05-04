@@ -10,18 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppEmpresaTI97">
 
-        <activity android:name=".MenuPrincipal_Activity">
-
+        <activity
+            android:name=".MenuPrincipal_Activity"
+            android:theme="@style/temaSemBarra">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".TermoUso_Activity" />
         <activity android:name=".PerfilUsuario_Activity" />
         <activity
             android:name=".CadastroUsuario_Activity"
             android:theme="@style/temaSemBarra">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
         <activity
             android:name=".Login_Activity"

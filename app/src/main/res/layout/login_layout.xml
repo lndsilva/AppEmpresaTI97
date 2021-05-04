@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="15dp"
         android:orientation="vertical">
 
@@ -34,10 +34,10 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:fontFamily="@font/roboto_regular"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:inputType="textEmailAddress" />
+                android:fontFamily="@font/roboto_regular"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -53,51 +53,62 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:fontFamily="@font/roboto_regular"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:inputType="textPassword" />
+                android:fontFamily="@font/roboto_regular"
+                android:inputType="textPassword"
+                android:textSize="20sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp"
-            android:textSize="20sp"
-            android:text="@string/login"
             android:fontFamily="@font/roboto_regular"
-            android:textAllCaps="false" />
+            android:padding="15dp"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnSair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:padding="15dp"
+            android:text="@string/sair"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
 
         <TextView
-            android:textSize="18sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/roboto_regular"
-            android:text="@string/recuperar_usu_rio_senha" />
+            android:text="@string/recuperar_usu_rio_senha"
+            android:textSize="18sp" />
 
         <TextView
-            android:textSize="18sp"
-            android:fontFamily="@font/roboto_regular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
-            android:text="@string/ou" />
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/ou"
+            android:textSize="18sp" />
 
         <TextView
-            android:textSize="18sp"
-            android:fontFamily="@font/roboto_regular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
-            android:text="@string/cadastrar" />
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/cadastrar"
+            android:textSize="18sp" />
 
 
     </LinearLayout>
