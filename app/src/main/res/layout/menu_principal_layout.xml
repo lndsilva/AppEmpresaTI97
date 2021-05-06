@@ -24,10 +24,11 @@
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
-            android:outlineSpotShadowColor="@color/black"
+            android:id="@+id/idCardHerois"
             android:layout_width="190dp"
             android:layout_height="190dp"
             android:layout_marginLeft="10dp"
+            android:outlineSpotShadowColor="@color/black"
             app:cardBackgroundColor="#FFFFFF">
 
             <LinearLayout
@@ -48,7 +49,7 @@
                     android:layout_gravity="center_horizontal"
                     android:text="Herois"
                     android:textAllCaps="true"
-                    android:textColor="#FF5722"
+                    android:textColor="#000000"
                     android:textSize="20sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -56,13 +57,189 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/idCardTimeLine"
             android:layout_width="190dp"
             android:layout_height="190dp"
             android:layout_marginLeft="10dp"
-            app:cardBackgroundColor="#FF5722">
+            android:outlineSpotShadowColor="@color/black"
+            app:cardBackgroundColor="#FFFFFF">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="center"
+                    android:src="@drawable/timeline" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="TimeLine"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/idCardGibi"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="10dp"
+            android:outlineSpotShadowColor="@color/black"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/comic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Comic"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/idCardFilmes"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="10dp"
+            android:outlineSpotShadowColor="@color/black"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="center"
+                    android:src="@drawable/films" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Filmes"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/idCardPoderes"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="10dp"
+            android:outlineSpotShadowColor="@color/black"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="center"
+                    android:src="@drawable/superpowers" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Poderes"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/idCardAfiliados"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_marginLeft="10dp"
+            android:outlineSpotShadowColor="@color/black"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="center"
+                    android:src="@drawable/afiliados" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Afiliados"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
 
     </LinearLayout>
 
