@@ -38,7 +38,7 @@ public class Splash_Activity extends AppCompatActivity {
                 //Fecha a janela em que estou
                 finish();
             }
-        }, 3000);
+        }, 2000);
 
 
     }

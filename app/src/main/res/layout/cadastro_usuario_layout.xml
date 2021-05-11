@@ -22,7 +22,6 @@
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txtUsuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -30,6 +29,7 @@
             app:startIconDrawable="@drawable/ic_baseline_person">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_regular"
@@ -39,7 +39,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txtCadEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -47,6 +46,7 @@
             app:startIconDrawable="@drawable/ic_baseline_email">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtCadEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_regular"
@@ -56,7 +56,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txtCadSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -64,6 +63,7 @@
             app:startIconDrawable="@drawable/ic_baseline_lock">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtCadSenha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_regular"
@@ -73,7 +73,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txtCadRepSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -81,6 +80,7 @@
             app:startIconDrawable="@drawable/ic_baseline_lock">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtCadRepSenha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_regular"
@@ -90,29 +90,32 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:textSize="20sp"
+            android:id="@+id/btnCadUsuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:text="@string/cadastrar_usuario" />
+            android:text="@string/cadastrar_usuario"
+            android:textSize="20sp" />
 
         <Button
-            android:textSize="20dp"
+            android:id="@+id/btnVoltarLogin"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:text="@string/login" />
+            android:text="@string/login"
+            android:textSize="20dp" />
 
         <TextView
-            android:layout_marginTop="10dp"
-            android:layout_gravity="end"
-            android:fontFamily="@font/roboto_regular"
+            android:id="@+id/txtTermoUsu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/termo_de_uso"/>
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/termo_de_uso" />
 
     </LinearLayout>
 

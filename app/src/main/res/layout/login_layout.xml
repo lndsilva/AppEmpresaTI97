@@ -25,7 +25,6 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/insira_seu_e_mail"
@@ -33,6 +32,7 @@
             app:startIconDrawable="@drawable/ic_baseline_email">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_regular"
@@ -42,7 +42,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txtSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -52,6 +51,7 @@
             app:startIconDrawable="@drawable/ic_baseline_lock">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtSenha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_regular"
@@ -81,6 +81,7 @@
             android:textSize="20sp" />
 
         <TextView
+            android:id="@+id/txtRecuperaSenha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -101,6 +102,8 @@
             android:textSize="18sp" />
 
         <TextView
+            android:onClick="abrirCadUsuario"
+            android:id="@+id/txtCadUsuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
