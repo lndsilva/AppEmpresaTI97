@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mHeroisCadastrar"
+        android:icon="@drawable/ic_baseline_add"
+        android:title="Cadastrar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mHeroisAlterar"
+        android:icon="@drawable/ic_baseline_save_alt"
+        android:title="Alterar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mHeroisApagar"
+        android:icon="@drawable/ic_baseline_delete"
+        android:title="Deletar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mHeroisPesquisar"
+        android:icon="@drawable/ic_baseline_search"
+        android:title="Pesquisar"
+        app:showAsAction="always" />
+
+    <group>
+        <item android:title="Salvar">
+            <menu>
+                <item
+                    android:id="@+id/mHeroisSalvarComo"
+                    android:title="Como" />
+                <item
+                    android:id="@+id/mHeroisSalvarTudo"
+                    android:title="Tudo" />
+            </menu>
+        </item>
+    </group>
+
+</menu>
