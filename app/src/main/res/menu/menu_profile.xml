@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mEditar"
+        android:contentDescription="Editar perfil"
+        android:icon="@drawable/ic_baseline_edit"
+        android:title="Editar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mCompPerfil"
+        android:contentDescription="Compartilhar perfil"
+        android:icon="@drawable/ic_baseline_share"
+        android:title="Compartilhar" />
+
+</menu>
