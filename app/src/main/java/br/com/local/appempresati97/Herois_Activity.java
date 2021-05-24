@@ -3,12 +3,14 @@ package br.com.local.appempresati97;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -48,7 +50,7 @@ public class Herois_Activity extends AppCompatActivity {
         setContentView(R.layout.herois_layout);
 
         //Cuidado ao colocar no menu a Home e depois você retirar a AppBar
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //Apresentar o xml ao java
         listView = findViewById(R.id.idListaHerois);
@@ -59,6 +61,31 @@ public class Herois_Activity extends AppCompatActivity {
 
         //inserir os itens do modelo na listview
         listView.setAdapter(adapter);
+
+        //Clicar em um item na ListView
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                /*Toast.makeText(getApplicationContext(),
+                        "Cliquei no heroi" + nomeHerois[position],
+                        Toast.LENGTH_SHORT).show();*/
+
+                //Passar os valores para outra página no momento em que abro uma janela.
+                Intent intent = new Intent(Herois_Activity.this, DetalhesHerois_Activity.class);
+
+                //Para passar os valores para a janela de destino
+                intent.putExtra("nomeHerois",nomeHerois[position]);
+                intent.putExtra("imgHerois",imagemHerois[position]);
+                intent.putExtra("descHerois",descHerois[position]);
+                intent.putExtra("valorHerois",valorHerois[position]);
+
+                //Abrir a janela e passar os valores para o destino
+                startActivity(intent);
+
+            }
+        });
+
+
     }
 
     //Criar o menu e inserir no Appbar da janela do aplicativo
@@ -150,21 +177,35 @@ public class Herois_Activity extends AppCompatActivity {
             Button btnModeloAcao;
             RatingBar rtnModeloImagem;
 
+            //Instanciar um layout para receber os componentes - Inflar os componentes na ListView
             View view = getLayoutInflater().inflate(R.layout.modelo_lista_herois, null);
 
-            //Apresentar os componentes xml ao java
+            //Apresentar os componentes xml ao java com base na View inflada / instanciada.
 
             txtTituloImagem = view.findViewById(R.id.txtTituloImagem);
             imgHerois = view.findViewById(R.id.imgModelo);
             txtDescricaoImagem = view.findViewById(R.id.txtDescricaoImagem);
             txtModeloValor = view.findViewById(R.id.txtModeloValor);
+            rtnModeloImagem = view.findViewById(R.id.rtnModeloImagem);
+            btnModeloAcao = view.findViewById(R.id.btnModeloAcao);
 
-            //Carregando os valores nos componentes
 
+            //Carregando os valores nos componentes dos vetores nos componentes
             txtTituloImagem.setText(nomeHerois[position]);
             imgHerois.setImageResource(imagemHerois[position]);
             txtDescricaoImagem.setText(descHerois[position]);
             txtModeloValor.setText(valorHerois[position]);
+
+            //Clicar no botão que está dentro da lista
+            btnModeloAcao.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(getApplicationContext(),
+                            "Cliquei no botão de ação",
+                            Toast.LENGTH_SHORT).show();
+
+                }
+            });
 
 
             return view;

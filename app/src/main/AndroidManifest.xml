@@ -9,26 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppEmpresaTI97">
-        <activity android:name=".Herois_Activity">
+        <activity android:name=".DetalhesHerois_Activity"></activity>
+        <activity
+            android:name=".Herois_Activity"
+            android:theme="@style/temaSemBarra">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity android:name=".RecuperarUsuario_Activity" />
         <activity
             android:name=".MenuPrincipal_Activity"
             android:theme="@style/temaSemBarra" />
-        <activity android:name=".TermoUso_Activity"></activity>
+        <activity android:name=".TermoUso_Activity" />
         <activity
             android:name=".PerfilUsuario_Activity"
-            android:theme="@style/temaSemBarra" >
-
-
-
-        </activity>
+            android:theme="@style/temaSemBarra"></activity>
         <activity
             android:name=".CadastroUsuario_Activity"
             android:theme="@style/temaSemBarra" />
@@ -37,9 +35,7 @@
             android:theme="@style/temaSemBarra" />
         <activity
             android:name=".Splash_Activity"
-            android:theme="@style/temaSemBarra">
-
-        </activity>
+            android:theme="@style/temaSemBarra"></activity>
         <activity android:name=".MainActivity" />
     </application>
 
